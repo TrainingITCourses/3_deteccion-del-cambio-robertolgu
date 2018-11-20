@@ -10,12 +10,14 @@ import { FilterComponent } from './filter/filter.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { LaunchListComponent } from './launch-list/launch-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    FilterComponent
+    FilterComponent,
+    LaunchListComponent
   ],
   imports: [
     BrowserModule,
