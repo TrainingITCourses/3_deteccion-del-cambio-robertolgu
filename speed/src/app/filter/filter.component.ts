@@ -48,18 +48,20 @@ export class FilterComponent implements OnInit {
         );
       } else if (this.criterio === 'Agencias') {
         filteredLaunches = this.allLaunches.filter(l =>
-          l.agencies == this.filterSelection
+          l.rocket !== undefined &&
+          l.rocket.agencies !== null &&
+          l.rocket.agencies[0] !== undefined &&
+          l.rocket.agencies[0].id == this.filterSelection
         );
       } else if (this.criterio === 'Tipo') {
         filteredLaunches = this.allLaunches.filter(l =>
-          l.misions !== undefined &&
-          l.misions[0].type == this.filterSelection
+          l.missions !== undefined &&
+          l.missions[0] !== undefined &&
+          l.missions[0].type == this.filterSelection
         );
       }
   }
-
     this.filteredLaunches = filteredLaunches;
-    console.log(this.filteredLaunches);
   }
 
 }

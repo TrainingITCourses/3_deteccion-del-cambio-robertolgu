@@ -1,0 +1,12 @@
+<h1>Angular Speed: aplicaciones de alto rendimiento</h1>
+<span *ngIf="!loaded">
+  <h3>Loading...</h3>
+</span>
+<div *ngIf="loaded">
+  <app-search></app-search>
+  <router-outlet></router-outlet>
+</div>
+<footer>
+  <a href="https://trainingit.es/">Training IT</a>
+  <small>A course By <a href="https://twitter.com/albertobasalo">Alberto Basalo</a></small>
+</footer>

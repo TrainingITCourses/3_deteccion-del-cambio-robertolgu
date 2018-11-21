@@ -11,13 +11,15 @@ import { FilterComponent } from './filter/filter.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { LaunchListComponent } from './launch-list/launch-list.component';
+import { ShellContainerComponent } from './shell-container/shell-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     FilterComponent,
-    LaunchListComponent
+    LaunchListComponent,
+    ShellContainerComponent
   ],
   imports: [
     BrowserModule,
